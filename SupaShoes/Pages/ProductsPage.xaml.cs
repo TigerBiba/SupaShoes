@@ -98,7 +98,10 @@ namespace SupaShoes.Pages
                 result = result.Where(p => p.manufacturer_id == 7).ToList();
 
             result = result.Where(p => p.name.ToLower().Contains(tbSearchg.Text.ToLower())
-            || p.description.ToLower().Contains(tbSearchg.Text.ToLower())).ToList();
+                || p.description.ToLower().Contains(tbSearchg.Text.ToLower())
+                || p.Partners1.title.Contains(tbSearchg.Text.ToLower())
+                || p.Partners.title.Contains(tbSearchg.Text.ToLower()))
+                .ToList();
 
             LViewProduct.ItemsSource = result;
         }
