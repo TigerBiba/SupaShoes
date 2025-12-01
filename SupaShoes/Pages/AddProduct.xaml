@@ -40,7 +40,7 @@
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <TextBlock Text="Поставщик" HorizontalAlignment="Center"/>
-                <ComboBox x:Name="cmbSupplier" Width="140" Height="25" Margin="5">
+                <ComboBox x:Name="cmbSupplier" Margin="5">
                     <ComboBoxItem Content="Kari"/>
                     <ComboBoxItem Content="Обувь для вас"/>
                 </ComboBox>
@@ -48,7 +48,7 @@
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <TextBlock Text="Производитель" HorizontalAlignment="Center"/>
-                <ComboBox x:Name="cmbManufacturer" Width="140" Height="25" Margin="5">
+                <ComboBox x:Name="cmbManufacturer" Margin="5">
                     <ComboBoxItem Content="Kari"/>
                     <ComboBoxItem Content="Обувь для вас"/>
                     <ComboBoxItem Content="Marco Tozzi"/>
@@ -61,7 +61,7 @@
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <TextBlock Text="Категория" HorizontalAlignment="Center"/>
-                <ComboBox x:Name="cmbCategory" Width="140" Height="25" Margin="5">
+                <ComboBox x:Name="cmbCategory" Margin="5">
                     <ComboBoxItem Content="Женская обувь"/>
                     <ComboBoxItem Content="Мужская обувь"/>
                 </ComboBox>

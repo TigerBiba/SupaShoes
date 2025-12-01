@@ -83,19 +83,19 @@ namespace SupaShoes.Pages
                 result = result.OrderByDescending(p => p.count).ToList();
 
             if(cmbFilter.SelectedIndex == 1)
-                result = result.Where(p => p.manufacturer_id == 1).ToList();
+                result = result.Where(p => p.supplier_id == 1).ToList();
             if (cmbFilter.SelectedIndex == 2)
-                result = result.Where(p => p.manufacturer_id == 2).ToList();
+                result = result.Where(p => p.supplier_id == 2).ToList();
             if (cmbFilter.SelectedIndex == 3)
-                result = result.Where(p => p.manufacturer_id == 3).ToList();
+                result = result.Where(p => p.supplier_id == 3).ToList();
             if (cmbFilter.SelectedIndex == 4)
-                result = result.Where(p => p.manufacturer_id == 4).ToList();
+                result = result.Where(p => p.supplier_id == 4).ToList();
             if (cmbFilter.SelectedIndex == 5)
-                result = result.Where(p => p.manufacturer_id == 5).ToList();
+                result = result.Where(p => p.supplier_id == 5).ToList();
             if (cmbFilter.SelectedIndex == 6)
-                result = result.Where(p => p.manufacturer_id == 6).ToList();
+                result = result.Where(p => p.supplier_id == 6).ToList();
             if (cmbFilter.SelectedIndex == 7)
-                result = result.Where(p => p.manufacturer_id == 7).ToList();
+                result = result.Where(p => p.supplier_id == 7).ToList();
 
             result = result.Where(p => p.name.ToLower().Contains(tbSearchg.Text.ToLower())
                 || p.description.ToLower().Contains(tbSearchg.Text.ToLower())

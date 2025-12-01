@@ -20,17 +20,17 @@
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <TextBlock Text="Пользователь" HorizontalAlignment="Center"/>
-                <ComboBox x:Name="cmbUser" Width="140" Height="25" Margin="5"/>
+                <ComboBox x:Name="cmbUser" Margin="5"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <TextBlock Text="Товар" HorizontalAlignment="Center"/>
-                <ComboBox x:Name="cmbArticle" Width="140" Height="25" Margin="5"/>
+                <ComboBox x:Name="cmbArticle" Margin="5"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <TextBlock Text="Пункт выдачи" HorizontalAlignment="Center"/>
-                <ComboBox x:Name="cmbPickap" Width="140" Height="25" Margin="5"/>
+                <ComboBox x:Name="cmbPickap" Margin="5"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
@@ -45,7 +45,7 @@
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <TextBlock Text="Статус заказа" HorizontalAlignment="Center"/>
-                <ComboBox x:Name="cmbStatus" Width="140" Height="25" Margin="5">
+                <ComboBox x:Name="cmbStatus" Margin="5">
                     <ComboBoxItem Content="Завершён"/>
                     <ComboBoxItem Content="Новый"/>
                 </ComboBox>

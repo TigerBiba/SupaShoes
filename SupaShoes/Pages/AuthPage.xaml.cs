@@ -30,7 +30,7 @@ namespace SupaShoes.Pages
         {
             var context = SuperShoesEntities.GetContext();
 
-            string password = tbPassword.Text;
+            string password = tbPassword.Password;
             string login = tbLogin.Text;
 
             // поиск пользователя по email и password
