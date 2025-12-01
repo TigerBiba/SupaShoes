@@ -1,0 +1,22 @@
+﻿<Window x:Class="SupaShoes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SupaShoes"
+        mc:Ignorable="d"
+        Title="SuperShoes" Height="450" Width="800" Icon="/Resources/Icon.ico">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="187*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="#7FFF00">
+            <Image Width="45" Height="45" HorizontalAlignment="Left" Margin="5" Source="/Resources/icon.png"/>
+            <Button x:Name="btnBack" HorizontalAlignment="Right" Content="Назад" Click="btnBack_Click"/>
+        </Grid>
+        <Frame x:Name="FrmMain" Grid.Row="1" NavigationUIVisibility="Hidden" ContentRendered="FrmMain_ContentRendered"/>
+    </Grid>
+</Window>

@@ -1,0 +1,34 @@
+﻿<Page x:Class="SupaShoes.Pages.AuthPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SupaShoes.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Авторизация">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Vertical" Grid.Column="1">
+            <TextBlock Text="Авторизация" HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Login(email)" HorizontalAlignment="Center"/>
+            <TextBox x:Name="tbLogin" Width="140" Height="25"/>
+
+            <TextBlock Text="Password" HorizontalAlignment="Center"/>
+            <TextBox x:Name="tbPassword" Width="140" Height="25"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="btnAuth" Content="Войти" Click="tbAuth_Click"/>
+                <Button x:Name="btnGuest" Content="Войти как гость" Click="tbGuest_Click"/>
+            </StackPanel>
+            
+        </StackPanel>
+    </Grid>
+</Page>
